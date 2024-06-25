@@ -3,6 +3,8 @@ using namespace std;
 
 class Date
 {
+	friend ostream& operator<<(ostream& out, const Date& d);
+	friend istream& operator>>(istream& in, Date& d);
 public:
 	int GetMonthDay(int year, int month)
 	{
@@ -133,6 +135,19 @@ private:
 	int _day;
 };
 
+ostream& operator<<(ostream& out, const Date& d)
+{
+	out << d._year << "-" << d._month << "-" << d._day << endl;
+	return out;
+ }
+istream& operator>>(istream& in, Date& d)
+{
+	in >> d._year >> d._month >> d._day;
+	return in;
+}
+
+
+
 int main()
 {
 	Date d1(2022, 2, 28);
@@ -153,6 +168,12 @@ int main()
 
 	Date d4 = d3 + 33;
 	d4.print();
+
+	cout << d4;
+
+	Date d5;
+	cin >> d5;
+	cout << d5;
 
 	return 0;
 }

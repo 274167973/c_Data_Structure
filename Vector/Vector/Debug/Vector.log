@@ -1,0 +1,7 @@
+﻿  test.cpp
+D:\github\STL\Vector\Vector\vector.h(238,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\github\STL\Vector\Vector\vector.h(256,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\github\STL\Vector\Vector\vector.h(271,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\github\STL\Vector\Vector\vector.h(279,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\github\STL\Vector\Vector\vector.h(286,21): warning C4018: “<”: 有符号/无符号不匹配
+  Vector.vcxproj -> D:\github\STL\Vector\Debug\Vector.exe
